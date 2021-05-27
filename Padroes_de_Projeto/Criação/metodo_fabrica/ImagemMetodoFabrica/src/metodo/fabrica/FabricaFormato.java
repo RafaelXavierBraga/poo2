@@ -4,11 +4,25 @@ public class FabricaFormato {
 
     public static Formato gerarFormato(String formato) {
         Formato gerador = null;
-        if (formato.equalsIgnoreCase("jpeg")) {
-            gerador = new FormatoJpeg();
-        } else if (formato.equalsIgnoreCase("png")) {
-            gerador = new FormatoPng();
+        
+        switch (formato){ 
+        	case "jpeg":
+        		gerador = new FormatoJpeg();
+        		return gerador;
+        	case "png":
+        		gerador = new FormatoPng();
+        		return gerador;
+        	case "bmp":
+        		gerador = new FormatoBmp();
+        		return gerador;
+        	case "gif":
+        		gerador = new FormatoGif();
+        		return gerador;
+        	
+        	default:
+        		return gerador;
         }
-        return gerador;
+       
+   
     }
 }
