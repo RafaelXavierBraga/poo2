@@ -41,14 +41,23 @@ public class EditorTexto extends javax.swing.JFrame {
     
     private void addButtons(String tema){
         
+        FabricaAbstrataBotoes b = null;
         if(tema.equalsIgnoreCase("tema1")){
+            b = new ButtonWithoutIcon(); 
+            
         }else if(tema.equalsIgnoreCase("tema2")){
+            b = new ButtonWithIcon();
+            
         }                
-                
-        cancel = new JButton();
-        ok = new JButton();
-        ok.setText("OK");
-        cancel.setText("Cancel");
+        
+        
+        ButtonOk bo = b.criaBotaoOK();
+        ok = bo.createButtonOk();
+        ButtonCancel bc = b.criaBotaoCancel();
+        cancel = bc.createButtonCancel();
+        
+        //cancel = b.criaBotaoCancel();
+        
         
                 
         jLabel1 = new javax.swing.JLabel();
@@ -56,7 +65,7 @@ public class EditorTexto extends javax.swing.JFrame {
         jTextArea1.setRows(5);
         jScrollPane1.setViewportView(jTextArea1);
 
-        cancel.setText("Cancelar");
+        //cancel.setText("Cancelar");
         jLabel1.setText("Descrição:");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

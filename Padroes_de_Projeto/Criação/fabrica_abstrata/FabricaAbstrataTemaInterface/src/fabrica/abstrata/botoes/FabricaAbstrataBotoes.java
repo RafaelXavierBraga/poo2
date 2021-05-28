@@ -1,7 +1,6 @@
 package fabrica.abstrata.botoes;
 
 
-import javax.swing.JButton;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -14,6 +13,6 @@ import javax.swing.JButton;
  * @author felipe
  */
 public abstract class FabricaAbstrataBotoes {    
-    public abstract JButton criaBotaoOK();    
-    public abstract JButton criaBotaoCancel();            
+    public abstract ButtonOk criaBotaoOK();    
+    public abstract ButtonCancel criaBotaoCancel();            
 }

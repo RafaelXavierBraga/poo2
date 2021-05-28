@@ -49,7 +49,7 @@ public class TelaInicial extends javax.swing.JFrame {
             }
         });
 
-        jMenu2.setText("Edição");
+        jMenu2.setText("Edi��o");
         jMenu2.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jMenu2MouseClicked(evt);
@@ -90,7 +90,8 @@ public class TelaInicial extends javax.swing.JFrame {
     private void temaItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_temaItemStateChanged
         // TODO add your handling code here:
         
-        //Change button behaviour 
+        //Change button behaviour
+    	
         
         
         
@@ -103,7 +104,7 @@ public class TelaInicial extends javax.swing.JFrame {
 
     private void temaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_temaActionPerformed
         // TODO add your handling code here:
-        
+
         
         
         
